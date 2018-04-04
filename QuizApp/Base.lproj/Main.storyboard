@@ -24,7 +24,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
-                                    <segue destination="KOr-fR-9mT" kind="show" id="7YM-Bg-t3p"/>
+                                    <segue destination="KOr-fR-9mT" kind="show" identifier="quizType" id="7YM-Bg-t3p"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YM6-Rc-8Hu">
@@ -44,11 +44,11 @@
             </objects>
             <point key="canvasLocation" x="1544.8" y="-321.58920539730138"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Quiz Type View Controller-->
         <scene sceneID="NNi-uI-ihF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPx-ls-BcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="KOr-fR-9mT" sceneMemberID="viewController">
+                <tableViewController id="KOr-fR-9mT" customClass="QuizTypeViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" springLoaded="YES" id="wIX-Ed-tWe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +140,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Numbers"/>
                                                     <connections>
-                                                        <segue destination="3zr-Wf-WBt" kind="show" id="FOx-bW-ogy"/>
+                                                        <segue destination="3zr-Wf-WBt" kind="show" identifier="math" id="FOx-bW-ogy"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -158,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="2279" y="-324"/>
         </scene>
-        <!--View Controller-->
+        <!--Math List View Controller-->
         <scene sceneID="71W-vw-917">
             <objects>
-                <viewController id="3zr-Wf-WBt" sceneMemberID="viewController">
+                <viewController id="3zr-Wf-WBt" customClass="MathListViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4fF-3F-ddx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +177,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="dfF-Wm-Zws">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="highScore" id="dfF-Wm-Zws">
                                         <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dfF-Wm-Zws" id="icV-7N-VjR">
@@ -195,7 +195,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Yem-bo-01X" kind="show" id="S0g-k1-5un"/>
+                                    <segue destination="Yem-bo-01X" kind="show" identifier="mathQuiz" id="S0g-k1-5un"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -211,6 +211,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4eF-1P-Ub6"/>
                     </view>
+                    <connections>
+                        <outlet property="mathTableView" destination="E7M-85-sWl" id="uKb-2w-bWR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vbf-MA-S26" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

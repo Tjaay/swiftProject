@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class FirstViewController: UIViewController {
 
@@ -20,6 +21,13 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    var managedObjectContext: NSManagedObjectContext!
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "quizType" {
+            let controller = segue.destination as! QuizTypeViewController
+            controller.managedObjectContext = managedObjectContext
+        }
+    }
 }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 protocol MathQuizDelegate: class {
     func mathQuizVC(_ control: MathQuizViewController, didAddScore item: HighScore
@@ -25,6 +26,11 @@ class MathQuizViewController: UIViewController {
     @IBOutlet weak var choiceTwoBtn: UIButton!
     @IBOutlet weak var choiceThreeBtn: UIButton!
     @IBOutlet weak var choiceFourBtn: UIButton!
+    
+    weak var delegate:MathQuizDelegate?
+    var managedObjectContext: NSManagedObjectContext!
+    var highScore:HighScore?
+
     
     let question = MathQuizQuestions()
     var questionIndex: Int = 0
@@ -99,12 +105,20 @@ class MathQuizViewController: UIViewController {
     }
     
     func gameAlert(_ msg:String) {
+        highScore = HighScore(context: managedObjectContext)
+        highScore!.name = "hello"
+     
         let alert = UIAlertController(title: "Game Over", message:
             msg, preferredStyle: UIAlertControllerStyle.alert)
         
         let done = UIAlertAction(title: "Add Score", style: .default,
                                  handler: {(action:UIAlertAction!) in
-                                    print("you have pressed the ok button")
+                                    do {
+                                        try self.managedObjectContext.save()
+                                    } catch {
+                                        print("Core Data Error")
+                                    }
+                                    self.delegate?.mathQuizVC(self, didAddScore: self.highScore!)
                                     })
         let again = UIAlertAction(title: "Play Again", style: .default,
                                   handler: {(action:UIAlertAction!) in
