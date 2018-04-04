@@ -23,6 +23,10 @@
 		B3ED7E782074C4E700EE5472 /* HighScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E762074C4E700EE5472 /* HighScore+CoreDataProperties.swift */; };
 		B3ED7E7A2074C5A200EE5472 /* MathListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E792074C5A200EE5472 /* MathListViewController.swift */; };
 		B3ED7E7C2074D15000EE5472 /* QuizTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E7B2074D15000EE5472 /* QuizTypeViewController.swift */; };
+		B3F59BB52074FC2200733A94 /* WordQuizQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F59BB42074FC2200733A94 /* WordQuizQuestions.swift */; };
+		B3F59BB72074FC3E00733A94 /* WordQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F59BB62074FC3E00733A94 /* WordQuestion.swift */; };
+		B3F59BB92074FF9500733A94 /* WordQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F59BB82074FF9500733A94 /* WordQuizViewController.swift */; };
+		B3F59BBB2074FFA800733A94 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F59BBA2074FFA800733A94 /* WordListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		B3ED7E762074C4E700EE5472 /* HighScore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HighScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B3ED7E792074C5A200EE5472 /* MathListViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MathListViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		B3ED7E7B2074D15000EE5472 /* QuizTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTypeViewController.swift; sourceTree = "<group>"; };
+		B3F59BB42074FC2200733A94 /* WordQuizQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordQuizQuestions.swift; sourceTree = "<group>"; };
+		B3F59BB62074FC3E00733A94 /* WordQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordQuestion.swift; sourceTree = "<group>"; };
+		B3F59BB82074FF9500733A94 /* WordQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordQuizViewController.swift; sourceTree = "<group>"; };
+		B3F59BBA2074FFA800733A94 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,7 @@
 				B3ED7E752074C4E700EE5472 /* HighScore+CoreDataClass.swift */,
 				B3ED7E762074C4E700EE5472 /* HighScore+CoreDataProperties.swift */,
 				B3ED7E6A2074A24F00EE5472 /* MathQuestion.swift */,
+				B3F59BB62074FC3E00733A94 /* WordQuestion.swift */,
 				B3ED7E722074C48200EE5472 /* dataModel.xcdatamodeld */,
 			);
 			path = Model;
@@ -160,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				B3ED7E6D2074A50700EE5472 /* MathQuizQuestions.swift */,
+				B3F59BB42074FC2200733A94 /* WordQuizQuestions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -172,6 +182,8 @@
 				B3ED7E6F2074AAF000EE5472 /* MathQuizViewController.swift */,
 				B3ED7E7B2074D15000EE5472 /* QuizTypeViewController.swift */,
 				B3ED7E792074C5A200EE5472 /* MathListViewController.swift */,
+				B3F59BB82074FF9500733A94 /* WordQuizViewController.swift */,
+				B3F59BBA2074FFA800733A94 /* WordListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,13 +324,17 @@
 			files = (
 				B3ED7E772074C4E700EE5472 /* HighScore+CoreDataClass.swift in Sources */,
 				B3ED7E3C2074407F00EE5472 /* SecondViewController.swift in Sources */,
+				B3F59BBB2074FFA800733A94 /* WordListViewController.swift in Sources */,
 				B3ED7E782074C4E700EE5472 /* HighScore+CoreDataProperties.swift in Sources */,
+				B3F59BB72074FC3E00733A94 /* WordQuestion.swift in Sources */,
 				B3ED7E6E2074A50700EE5472 /* MathQuizQuestions.swift in Sources */,
 				B3ED7E742074C48200EE5472 /* dataModel.xcdatamodeld in Sources */,
 				B3ED7E382074407F00EE5472 /* AppDelegate.swift in Sources */,
+				B3F59BB52074FC2200733A94 /* WordQuizQuestions.swift in Sources */,
 				B3ED7E7A2074C5A200EE5472 /* MathListViewController.swift in Sources */,
 				B3ED7E702074AAF000EE5472 /* MathQuizViewController.swift in Sources */,
 				B3ED7E3A2074407F00EE5472 /* FirstViewController.swift in Sources */,
+				B3F59BB92074FF9500733A94 /* WordQuizViewController.swift in Sources */,
 				B3ED7E6B2074A24F00EE5472 /* MathQuestion.swift in Sources */,
 				B3ED7E7C2074D15000EE5472 /* QuizTypeViewController.swift in Sources */,
 			);
