@@ -55,17 +55,17 @@ class WordQuizViewController: UIViewController {
             score += 10
             disableBtns()
             updateLabels()
-            if questionIndex == 20 {
-//                gameAlert("GAME WON!")
+            if questionIndex == question.wordQuestions.count {
+               gameAlert("GAME WON!")
             }
             nextBtn.isHidden = false
         } else {
             sender.backgroundColor = UIColor(red:1.00, green:0.28, blue:0.13, alpha:1.0)
             lives = lives - 1
             updateLabels()
-//            if lives == 0 {
-//                gameAlert("GAME OVER!")
-//            }
+           if lives == 0 {
+               gameAlert("GAME OVER!")
+            }
         }
         
     }

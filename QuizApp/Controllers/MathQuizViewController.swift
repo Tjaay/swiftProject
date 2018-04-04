@@ -140,7 +140,7 @@ class MathQuizViewController: UIViewController {
       score += 10
       disableBtns()
       updateLabels()
-      if questionIndex == 20 {
+      if questionIndex == question.mathQuestions.count {
         gameAlert("GAME WON!")
       }
       nextBtn.isHidden = false
