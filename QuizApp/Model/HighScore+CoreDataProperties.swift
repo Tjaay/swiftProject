@@ -19,6 +19,7 @@ extension HighScore {
 
     @NSManaged public var name: String?
     @NSManaged public var score: String?
+    @NSManaged public var photoID: NSNumber?
     @NSManaged public var highestQuestion: String?
 
 }
