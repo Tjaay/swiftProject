@@ -23,6 +23,8 @@
 		B3ED7E782074C4E700EE5472 /* HighScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E762074C4E700EE5472 /* HighScore+CoreDataProperties.swift */; };
 		B3ED7E7A2074C5A200EE5472 /* MathListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E792074C5A200EE5472 /* MathListViewController.swift */; };
 		B3ED7E7C2074D15000EE5472 /* QuizTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E7B2074D15000EE5472 /* QuizTypeViewController.swift */; };
+		B3F1F9CD20754A1D00113ABF /* WordHighScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1F9CB20754A1D00113ABF /* WordHighScore+CoreDataClass.swift */; };
+		B3F1F9CE20754A1D00113ABF /* WordHighScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1F9CC20754A1D00113ABF /* WordHighScore+CoreDataProperties.swift */; };
 		B3F59BB52074FC2200733A94 /* WordQuizQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F59BB42074FC2200733A94 /* WordQuizQuestions.swift */; };
 		B3F59BB72074FC3E00733A94 /* WordQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F59BB62074FC3E00733A94 /* WordQuestion.swift */; };
 		B3F59BB92074FF9500733A94 /* WordQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F59BB82074FF9500733A94 /* WordQuizViewController.swift */; };
@@ -69,6 +71,8 @@
 		B3ED7E762074C4E700EE5472 /* HighScore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HighScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B3ED7E792074C5A200EE5472 /* MathListViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MathListViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		B3ED7E7B2074D15000EE5472 /* QuizTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTypeViewController.swift; sourceTree = "<group>"; };
+		B3F1F9CB20754A1D00113ABF /* WordHighScore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordHighScore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B3F1F9CC20754A1D00113ABF /* WordHighScore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordHighScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B3F59BB42074FC2200733A94 /* WordQuizQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordQuizQuestions.swift; sourceTree = "<group>"; };
 		B3F59BB62074FC3E00733A94 /* WordQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordQuestion.swift; sourceTree = "<group>"; };
 		B3F59BB82074FF9500733A94 /* WordQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordQuizViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 		B3ED7E6720749FC100EE5472 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B3F1F9CB20754A1D00113ABF /* WordHighScore+CoreDataClass.swift */,
+				B3F1F9CC20754A1D00113ABF /* WordHighScore+CoreDataProperties.swift */,
 				B3ED7E752074C4E700EE5472 /* HighScore+CoreDataClass.swift */,
 				B3ED7E762074C4E700EE5472 /* HighScore+CoreDataProperties.swift */,
 				B3ED7E6A2074A24F00EE5472 /* MathQuestion.swift */,
@@ -324,12 +330,14 @@
 			files = (
 				B3ED7E772074C4E700EE5472 /* HighScore+CoreDataClass.swift in Sources */,
 				B3ED7E3C2074407F00EE5472 /* SecondViewController.swift in Sources */,
+				B3F1F9CE20754A1D00113ABF /* WordHighScore+CoreDataProperties.swift in Sources */,
 				B3F59BBB2074FFA800733A94 /* WordListViewController.swift in Sources */,
 				B3ED7E782074C4E700EE5472 /* HighScore+CoreDataProperties.swift in Sources */,
 				B3F59BB72074FC3E00733A94 /* WordQuestion.swift in Sources */,
 				B3ED7E6E2074A50700EE5472 /* MathQuizQuestions.swift in Sources */,
 				B3ED7E742074C48200EE5472 /* dataModel.xcdatamodeld in Sources */,
 				B3ED7E382074407F00EE5472 /* AppDelegate.swift in Sources */,
+				B3F1F9CD20754A1D00113ABF /* WordHighScore+CoreDataClass.swift in Sources */,
 				B3F59BB52074FC2200733A94 /* WordQuizQuestions.swift in Sources */,
 				B3ED7E7A2074C5A200EE5472 /* MathListViewController.swift in Sources */,
 				B3ED7E702074AAF000EE5472 /* MathQuizViewController.swift in Sources */,

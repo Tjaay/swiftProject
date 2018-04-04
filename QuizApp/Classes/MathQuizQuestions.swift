@@ -20,7 +20,7 @@ class MathQuizQuestions {
     
     mathQuestions.append(MathQuestion(question: "What is 15 + 15?", choiceOne: "25", choiceTwo: "1515", choiceThree: "30", choiceFour: "77", answer: 3))
     
-    mathQuestions.append(MathQuestion(question: "What is 25 + 15", choiceOne: "33", choiceTwo: "5", choiceThree: "25", choiceFour: "50", answer: 4))
+    mathQuestions.append(MathQuestion(question: "What is 25 + 15", choiceOne: "33", choiceTwo: "5", choiceThree: "25", choiceFour: "40", answer: 4))
     
     mathQuestions.append(MathQuestion(question: "What is 10 - 9?", choiceOne: "1", choiceTwo: "61", choiceThree: "19", choiceFour: "8", answer: 1))
     
@@ -42,7 +42,7 @@ class MathQuizQuestions {
     
     mathQuestions.append(MathQuestion(question: "What is 3 * 3?", choiceOne: "6", choiceTwo: "33", choiceThree: "4", choiceFour: "9", answer: 4))
     
-    mathQuestions.append(MathQuestion(question: "What is 82 / 2?", choiceOne: "34", choiceTwo: "22", choiceThree: "44", choiceFour: "8", answer: 3))
+    mathQuestions.append(MathQuestion(question: "What is 82 / 2?", choiceOne: "34", choiceTwo: "22", choiceThree: "41", choiceFour: "8", answer: 3))
     
     mathQuestions.append(MathQuestion(question: "What is 48 / 4?", choiceOne: "14", choiceTwo: "44", choiceThree: "12", choiceFour: "99", answer: 3))
     

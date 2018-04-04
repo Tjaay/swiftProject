@@ -86,6 +86,10 @@ class QuizTypeViewController: UITableViewController {
             let controller = segue.destination as! MathListViewController
             controller.managedObjectContext = managedObjectContext
         }
+        if segue.identifier == "words" {
+            let controller = segue.destination as! WordListViewController   
+            controller.managedObjectContext = managedObjectContext
+        }
     }
     
 
