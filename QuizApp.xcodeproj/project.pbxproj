@@ -15,6 +15,12 @@
 		B3ED7E442074407F00EE5472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3ED7E422074407F00EE5472 /* LaunchScreen.storyboard */; };
 		B3ED7E4F2074407F00EE5472 /* QuizAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E4E2074407F00EE5472 /* QuizAppTests.swift */; };
 		B3ED7E5A2074407F00EE5472 /* QuizAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E592074407F00EE5472 /* QuizAppUITests.swift */; };
+		B3ED7E6B2074A24F00EE5472 /* MathQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E6A2074A24F00EE5472 /* MathQuestion.swift */; };
+		B3ED7E6E2074A50700EE5472 /* MathQuizQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E6D2074A50700EE5472 /* MathQuizQuestions.swift */; };
+		B3ED7E702074AAF000EE5472 /* MathQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E6F2074AAF000EE5472 /* MathQuizViewController.swift */; };
+		B3ED7E742074C48200EE5472 /* dataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E722074C48200EE5472 /* dataModel.xcdatamodeld */; };
+		B3ED7E772074C4E700EE5472 /* HighScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E752074C4E700EE5472 /* HighScore+CoreDataClass.swift */; };
+		B3ED7E782074C4E700EE5472 /* HighScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ED7E762074C4E700EE5472 /* HighScore+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		B3ED7E552074407F00EE5472 /* QuizAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3ED7E592074407F00EE5472 /* QuizAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppUITests.swift; sourceTree = "<group>"; };
 		B3ED7E5B2074407F00EE5472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3ED7E6A2074A24F00EE5472 /* MathQuestion.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MathQuestion.swift; sourceTree = "<group>"; tabWidth = 2; };
+		B3ED7E6D2074A50700EE5472 /* MathQuizQuestions.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MathQuizQuestions.swift; sourceTree = "<group>"; tabWidth = 2; };
+		B3ED7E6F2074AAF000EE5472 /* MathQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuizViewController.swift; sourceTree = "<group>"; };
+		B3ED7E732074C48200EE5472 /* dataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataModel.xcdatamodel; sourceTree = "<group>"; };
+		B3ED7E752074C4E700EE5472 /* HighScore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HighScore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B3ED7E762074C4E700EE5472 /* HighScore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HighScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				B3ED7E372074407F00EE5472 /* AppDelegate.swift */,
-				B3ED7E392074407F00EE5472 /* FirstViewController.swift */,
-				B3ED7E3B2074407F00EE5472 /* SecondViewController.swift */,
+				B3ED7E712074ABD000EE5472 /* Controllers */,
+				B3ED7E6C2074A4AB00EE5472 /* Classes */,
+				B3ED7E6720749FC100EE5472 /* Model */,
 				B3ED7E3D2074407F00EE5472 /* Main.storyboard */,
-				B3ED7E402074407F00EE5472 /* Assets.xcassets */,
 				B3ED7E422074407F00EE5472 /* LaunchScreen.storyboard */,
+				B3ED7E402074407F00EE5472 /* Assets.xcassets */,
 				B3ED7E452074407F00EE5472 /* Info.plist */,
 			);
 			path = QuizApp;
@@ -126,6 +139,35 @@
 				B3ED7E5B2074407F00EE5472 /* Info.plist */,
 			);
 			path = QuizAppUITests;
+			sourceTree = "<group>";
+		};
+		B3ED7E6720749FC100EE5472 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3ED7E752074C4E700EE5472 /* HighScore+CoreDataClass.swift */,
+				B3ED7E762074C4E700EE5472 /* HighScore+CoreDataProperties.swift */,
+				B3ED7E6A2074A24F00EE5472 /* MathQuestion.swift */,
+				B3ED7E722074C48200EE5472 /* dataModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3ED7E6C2074A4AB00EE5472 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B3ED7E6D2074A50700EE5472 /* MathQuizQuestions.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B3ED7E712074ABD000EE5472 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3ED7E3B2074407F00EE5472 /* SecondViewController.swift */,
+				B3ED7E392074407F00EE5472 /* FirstViewController.swift */,
+				B3ED7E6F2074AAF000EE5472 /* MathQuizViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3ED7E772074C4E700EE5472 /* HighScore+CoreDataClass.swift in Sources */,
 				B3ED7E3C2074407F00EE5472 /* SecondViewController.swift in Sources */,
+				B3ED7E782074C4E700EE5472 /* HighScore+CoreDataProperties.swift in Sources */,
+				B3ED7E6E2074A50700EE5472 /* MathQuizQuestions.swift in Sources */,
+				B3ED7E742074C48200EE5472 /* dataModel.xcdatamodeld in Sources */,
 				B3ED7E382074407F00EE5472 /* AppDelegate.swift in Sources */,
+				B3ED7E702074AAF000EE5472 /* MathQuizViewController.swift in Sources */,
 				B3ED7E3A2074407F00EE5472 /* FirstViewController.swift in Sources */,
+				B3ED7E6B2074A24F00EE5472 /* MathQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +604,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B3ED7E722074C48200EE5472 /* dataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B3ED7E732074C48200EE5472 /* dataModel.xcdatamodel */,
+			);
+			currentVersion = B3ED7E732074C48200EE5472 /* dataModel.xcdatamodel */;
+			path = dataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B3ED7E2C2074407F00EE5472 /* Project object */;
 }
